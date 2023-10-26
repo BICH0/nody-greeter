@@ -324,7 +324,7 @@ async function prepare_install() {
       break;
   }
 
-  fs.removeSync(path.join(nody_path, "resources"));
+  fs.removeSync(path.join(nody_path, "resources"),{ recursive: true, force: true });
   fs.renameSync(
     path.join(nody_path, "electron"),
     path.join(nody_path, "nody-greeter")
