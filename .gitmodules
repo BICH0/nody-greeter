@@ -1,3 +1,4 @@
-[submodule "terminal-greeter"]
-	path = terminal-greeter
+[submodule "themes/themes/terminal-greeter"]
+	path = themes/themes/terminal-greeter
 	url = git@github.com:BICH0/terminal-greeter.git
+	branch = minimal
