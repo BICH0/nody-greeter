@@ -1,0 +1,52 @@
+html, body{
+  margin: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background{
+  cursor: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+#wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 800px;
+  height: 100vh;
+}
+.window{
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  margin-top:  15vh;
+  transition: transform 0.1s;
+  overflow: hidden;
+}
+.true_window{
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 10px;
+}
+.true_window > .header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 22px;
+  width: 100%;
+}
+.header{
+  position: relative;
+}
+#stdout{
+  line-height: 20px;
+}
+#prompt, input{
+  display: inline-block;
+  height: 20px;
+}

@@ -1,0 +1,9 @@
+:root{
+  --text: white;
+  --terminal: rgba(28, 28, 28, 0.9);
+  --accent: #c92727;
+  --light-accent: #f16363;
+  --stdout: white;
+  --header: rgb(60, 60, 60);
+  --shadow: rgba(5, 5, 5, 0.2);
+}

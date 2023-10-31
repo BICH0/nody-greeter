@@ -1,0 +1,20 @@
+function sleep(ms) {
+  if (startup == "quick"){
+    return;
+  }
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
+
+async function load(mode){
+  //load all the windows
+};
+
+function terminal_animation(){
+  //animation for the terminal window/s
+};
+
+async function window_setup(){
+  //executed when window is fully loaded
+  startup = 'false';
+  return "ready";
+}

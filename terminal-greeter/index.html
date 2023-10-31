@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" id="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terminal-greeter</title>
+    <meta name="description" content="Theme: terminal-greeter">
+  	<meta name="author" content="B1ch0">
+    <script type="text/javascript" src="settings.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="themes/theme/theme.css">
+    <link rel="stylesheet" href="themes/theme/palette.css">
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="wrapper">
+      <div class="true_window window">
+        <div class="header"></div>
+        <div id="stdout"></div>
+        <div id="stdin">
+          <div id="prompt">
+          </div>
+          <input type="text" name="cli" id="cli" maxlength="40">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/mock.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/commands.js"></script>
+  </body>
+</html>

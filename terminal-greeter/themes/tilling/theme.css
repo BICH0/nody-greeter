@@ -1,0 +1,77 @@
+html{
+  font-family: monospace;
+  font-size: 16px;
+  color: var(--text);
+  background-image: url("../../backgrounds/wallpaper2.jpg");
+  cursor: none;
+}
+#background{
+  background: black;
+  transition: 1s transform;
+}
+#wrapper{
+  width: 90%;
+  height: 80vh;
+  padding: 10vh 0 10vh 0;
+}
+.window{
+  position: relative;
+  width: 100%;
+  border: 3px var(--accent) solid;
+  background: var(--terminal);
+  transition: 0.2s;
+  margin-top: 0;
+}
+.window_container{
+  width: 50%;
+}
+.true_window{
+  width: 50%;
+  position: relative;
+  right: 0;
+}
+.header{
+  position: relative;
+  padding: 5px 0px 5px 15px;
+  font-size: 15px;
+  background: var(--header);
+  box-shadow: 0px 4px 5px var(--shadow);
+}
+input, input:focus{
+  outline: none;
+  font-family: monospace;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: var(--accent);
+}
+.part{
+  margin-bottom: 10px;
+}
+.script-container{
+  margin: 0 auto;
+  padding: 10px;
+  width: fit-content;
+}
+.small_window{
+  height: 175px;
+  width: 275px;
+  position: absolute;
+  right: 15%;
+  top: 70px;
+  line-height: 1.15;
+  font-family: monospace;
+  padding: 25px;
+  border: 2px solid var(--light-accent);
+  background: rgba(0,0,0,0.4);
+  box-shadow: 7px 7px 10px var(--shadow)
+}
+.color1{
+  color: var(--light-accent);
+}
+.color2{
+  color: var(--accent);
+}
+.color3{
+  color: var(--stdout)
+}

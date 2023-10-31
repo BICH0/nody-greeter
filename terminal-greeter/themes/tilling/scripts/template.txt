@@ -1,0 +1,11 @@
+var t
+class main{
+  constructor(){
+    this.name="Hardware";
+  }
+  start(term){
+
+  }
+};
+window.os = new main();
+screen_plugins.push(os);
