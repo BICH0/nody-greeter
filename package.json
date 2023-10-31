@@ -8,6 +8,7 @@
     "start": "electron .",
     "rebuild": "electron-rebuild -w node-gtk",
     "build": "npm run build:tsc && node make build",
+    "build:tsc": "tsc --build",
     "type-check": "tsc --noEmit",
     "lint": "eslint \"ts/**\"",
     "lint:fix": "eslint \"ts/**\" --fix",
