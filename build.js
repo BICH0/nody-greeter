@@ -329,13 +329,24 @@ async function prepare_install() {
     path.join(nody_path, "electron"),
     path.join(nody_path, "nody-greeter")
   );
-  fs.moveSync(
-    path.join(webg_path, "themes/_vendor"),
-    path.join(webg_path, "_vendor/"),
-    {
-      overwrite: true,
-    }
-  );
+  try{
+    fs.moveSync(
+      path.join(webg_path, "themes/_vendor"),
+      path.join(webg_path, "_vendor/"),
+      {
+        overwrite: true,
+      }
+    );    
+  }catch{
+    console.log("Unable to move _vendor")
+    fs.moveSync(
+      path.join(webg_path, "themes/vendor"),
+      path.join(webg_path, "vendor/"),
+      {
+        overwrite: true,
+      }
+    );    
+  }
   console.log("INSTALL_ROOT (build/unpacked) prepared");
 }
 
