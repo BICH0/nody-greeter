@@ -6,16 +6,12 @@
   "scripts": {
     "lint:theme:gruvbox": "eslint \"themes/gruvbox/ts/**\"",
     "lint:theme:gruvbox:fix": "eslint \"themes/gruvbox/ts/**\" --fix",
-    "lint:theme:dracula": "eslint \"themes/dracula/ts/**\"",
-    "lint:theme:dracula:fix": "eslint \"themes/dracula/ts/**\" --fix",
-    "lint:themes": "npm run lint:theme:gruvbox && npm run lint:theme:dracula",
-    "lint:themes:fix": "npm run lint:theme:gruvbox:fix && npm run lint:theme:dracula:fix",
+    "lint:themes": "npm run lint:theme:gruvbox",
+    "lint:themes:fix": "npm run lint:theme:gruvbox:fix",
     "prettier:theme:gruvbox": "prettier --check themes/gruvbox/ts/ ",
     "prettier:theme:gruvbox:fix": "prettier --write themes/gruvbox/ts/",
-    "prettier:theme:dracula": "prettier --check themes/dracula/ts/ ",
-    "prettier:theme:dracula:fix": "prettier --write themes/dracula/ts/",
-    "prettier:themes": "npm run prettier:theme:gruvbox && npm run prettier:theme:dracula",
-    "prettier:themes:fix": "npm run prettier:theme:gruvbox:fix && npm run prettier:theme:dracula:fix"
+    "prettier:themes": "npm run prettier:theme:gruvbox",
+    "prettier:themes:fix": "npm run prettier:theme:gruvbox:fix"
   },
   "repository": {
     "type": "git",
